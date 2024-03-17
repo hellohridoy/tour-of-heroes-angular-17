@@ -1,2 +1,31 @@
 <h1>{{ title }}</h1>
+<nav>
+  <div style="background-color: #e9d7d7; overflow: hidden">
+    <a
+      (routerLink)="(['/heroes'])"
+      href="#"
+      style="
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      "
+      >DashBoard</a
+    >
+    <a
+      (routerLink)="(['/heroes'])"
+      href="#"
+      style="
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      "
+      >Hero</a
+    >
+  </div>
+</nav>
+<router-outlet></router-outlet>
 <app-heroes></app-heroes>
