@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { NgIf, UpperCasePipe } from '@angular/common';
+import { CommonModule, NgFor, NgIf, UpperCasePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Hero } from '../hero';
 
@@ -8,7 +8,7 @@ import { Hero } from '../hero';
   selector: 'app-hero-detail',
   templateUrl: './hero-detail.component.html',
   styleUrls: ['./hero-detail.component.css'],
-  imports: [FormsModule, NgIf, UpperCasePipe],
+  imports: [FormsModule, NgIf, NgFor, UpperCasePipe, CommonModule],
 })
 export class HeroDetailComponent {
   @Input() hero?: Hero;
